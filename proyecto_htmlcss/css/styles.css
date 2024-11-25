@@ -1,0 +1,14 @@
+@import url("./partials/footer.css");
+@import url("./partials/header.css");
+@import url("./partials/hero.css");
+@import url("./partials/reset.css");
+@import url("./partials/main.css");
+@import url(./partials/nav.css);
+
+/* color rojo #FA573A
+color fondo #21242E 
+gris nav #AAAAAA */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}

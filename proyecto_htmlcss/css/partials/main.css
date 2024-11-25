@@ -1,0 +1,141 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 span {
+    color: #FA573A;
+}
+
+.underline {
+    position: relative;
+    width: 100px;
+    margin: auto;
+    color: #AAAAAA;
+    text-align: center;
+}
+
+.underline span {
+    position: absolute;
+    color: #FA573A;
+    top: -0.35em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1em;
+    padding: 16px 0 8px 0;
+}
+
+h4 {
+    color: #FA573A;
+}
+
+p {
+    line-height: 1.20em;
+    padding: 10px 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FA573A;
+    border-radius: 8px;
+}
+
+.grid-article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 56px 16px;
+    width: 88%;
+    margin: auto;
+}
+
+.articulo {
+    border-left: 0px;
+    border-bottom: 2px solid #AAAAAA;
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .articulo {
+        border-bottom: 0;
+        border-left: 2px solid #AAAAAA;
+    }
+}
+
+.fa-solid.square {
+    color: #FA573A;
+    border: 1px solid #FA573A;
+    padding: 8px;
+}
+
+.flechasubir {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 80px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechasubir a {
+    color: #FA573A;
+    text-decoration: none;
+    font-size: 48px;
+}
+
+.our-services,
+.aboutus {
+    margin-top: 24px;
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 72px;
+    padding: 56px 16px;
+    width: 88%;
+    margin: auto;
+}
+
+.grid-about h3 {
+    padding: 0;
+}
+
+.grid-about h4 {
+    margin: 16px 0;
+}
+
+.grid-about figure.imagen .foto {
+    width: 100%;
+    margin: 0;
+}
+
+.cuadro {
+    border: 4px solid #FA573A;
+    transition: 1s;
+    transform: rotateZ(10deg)
+}
+
+.cuadro img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+figure.imagen:hover :is(.cuadro, .cuadro img) {
+    transform: rotateZ(0deg);
+    transition: 1s;
+}

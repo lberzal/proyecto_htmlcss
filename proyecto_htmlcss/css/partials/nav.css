@@ -1,0 +1,67 @@
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    color: #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    width: auto;
+}
+
+nav .hamburguesa {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav #menu-toggle {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #AAAAAA;
+    padding: 16px;
+    font-weight: 400;
+}
+
+#menu-toggle:checked+.menu {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        flex-wrap: nowrap;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+    .hamburguesa {
+        display: none;
+    }
+    nav ul li {
+        border-bottom: 0;
+    }
+}
